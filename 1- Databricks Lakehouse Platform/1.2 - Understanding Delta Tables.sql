@@ -117,4 +117,3 @@ DESCRIBE HISTORY employees
 
 -- COMMAND ----------
 
-
