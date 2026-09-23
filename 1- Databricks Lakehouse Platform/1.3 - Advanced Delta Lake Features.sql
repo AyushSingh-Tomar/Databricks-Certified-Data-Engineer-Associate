@@ -26,7 +26,7 @@ SELECT * FROM employees
 
 -- COMMAND ----------
 
-RESTORE TABLE employees TO VERSION AS OF 6
+RESTORE TABLE employees TO VERSION AS OF 4
 
 -- COMMAND ----------
 

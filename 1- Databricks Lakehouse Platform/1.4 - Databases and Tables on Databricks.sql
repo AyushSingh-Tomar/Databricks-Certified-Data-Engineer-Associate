@@ -10,7 +10,7 @@
 -- COMMAND ----------
 
 -- MAGIC %python
--- MAGIC dbutils.widgets.text("external_location", '<EXTERNAL-URL>/external_storage')
+-- MAGIC dbutils.widgets.text("external_location", 'system.information_schema.external_locations/external_storage')
 -- MAGIC external_location = dbutils.widgets.get("external_location")
 
 -- COMMAND ----------
@@ -170,3 +170,12 @@ DROP TABLE external_custom;
 
 -- MAGIC %python
 -- MAGIC display(dbutils.fs.ls(f'{external_location}/external_custom'))
+
+-- COMMAND ----------
+
+SHOW EXTERNAL LOCATIONS;
+
+-- COMMAND ----------
+
+-- MAGIC %md
+-- MAGIC

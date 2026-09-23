@@ -31,9 +31,9 @@ SHOW TABLES
 -- COMMAND ----------
 
 CREATE VIEW view_apple_phones
-AS  SELECT * 
-    FROM smartphones 
-    WHERE brand = 'Apple';
+AS SELECT *
+FROM smartphones
+where brand = 'Apple';
 
 -- COMMAND ----------
 
